@@ -1,0 +1,141 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Add appropriate styling for the container and layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+  padding: 60px;
+  border-left: 1px solid #ccc;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.bookmark-list {
+  flex: 1;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+
+#bookmarkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#bookmarkList li {
+  margin: 10px 0;
+  padding: 5px;
+  color: rgb(84, 7, 144);
+  /* background-color: #d5a6ff; */
+  /* border: 1px solid #bd0fc0; */
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: large;
+}
+
+#bookmarkList li:hover {
+  color: #000;
+  font-weight: bold;
+  background-color: #f5f0f6;
+}
+
+#bookmarkList li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* #bookmarkList li .tags {
+  display: block;
+  margin-top: 10px;
+  color: #666;
+}
+#bookmarkList li .bookmark-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; */
+
+.delete-button {
+  background-color: #d81e2d;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 80%;
+}
+
+.search-section {
+  display: flex; /* Display the buttons in a line */
+  align-items: center; /* Center items vertically */
+  flex: 1;
+  padding-left: 50%;
+  border-radius: 10px;
+}
+
+#searchButton,
+#clearSearchButton {
+  background-color: #f5f0f6;
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+#searchInput {
+  width: 70%;
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 10px;
+}
+
+#searchButton:hover,
+#clearSearchButton:hover {
+  background-color: #ecddf9;
+  color: rgb(84, 7, 144);
+}
+
+#bookmarkList li .tags {
+  display: block;
+  margin-top: 3px;
+  color: #7a7777;
+}
+
+footer {
+  margin-top: auto; /* Push the footer to the bottom */
+  text-align: center; /* Center-align the content in the footer */
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+/* Add a class to hide the "More" item initially */
+.hidden {
+  display: none;
+}
+@media screen and (max-width: 375px) {
+  #searchInput {
+    width: 60%;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  .search-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding-left: 10px;
+    border-radius: 10px;
+  }
+}

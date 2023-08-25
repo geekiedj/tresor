@@ -1,0 +1,20 @@
+{
+  "name": "Tresor",
+  "version": "1.0.0",
+  "description": "A simple bookmark manager",
+  "permissions": ["bookmarks", "storage", "tabs"],
+  "icons": {
+    "48": "images/icons.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "chrome_url_overrides": {
+    "bookmarks": "bookmark-page/bookmark-page.html"
+  },
+
+  "manifest_version": 3
+}

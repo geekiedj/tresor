@@ -1,0 +1,28 @@
+/* Style for the button container */
+.container {
+  display: flex; /* Display buttons side by side */
+  align-items: center; /* Center buttons vertically within the container */
+  margin-top: 10px; /* Add some spacing between the buttons and the input */
+}
+
+/* Style for the buttons */
+button {
+  padding: 10px 20px;
+  background-color: #f5f0f6;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Style for button hover */
+button:hover {
+  background-color: #bd0fc0; /* Darker purple on hover */
+}
+
+#tagsInput {
+  margin-top: 30px;
+  padding-right: 10px;
+}
